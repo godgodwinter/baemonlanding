@@ -232,6 +232,7 @@ https://templatemo.com/tm-538-digital-trend
     height: 50px;
     width: 50px;
     opacity: 0.8;
+    transition: all 0.3s ease;
   }
 
   #scrollTop:hover {
