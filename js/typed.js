@@ -1,7 +1,7 @@
 const carouselText = [
-  {text: "Apple", color: "red"},
-  {text: "Orange", color: "orange"},
-  {text: "Lemon", color: "yellow"}
+  {text: "Apple", color: "#F43F5E"},
+  {text: "Orange", color: "#3B82F6"},
+  {text: "Lemon", color: "#10B981"}
 ]
 
 $( document ).ready(async function() {
@@ -24,7 +24,7 @@ async function deleteSentence(eleRef) {
   const letters = sentence.split("");
   let i = 0;
   while(letters.length > 0) {
-    await waitForMs(100);
+    await waitForMs(50);
     letters.pop();
     $(eleRef).html(letters.join(""));
   }
@@ -35,7 +35,7 @@ async function carousel(carouselList, eleRef) {
     while(true) {
       updateFontColor(eleRef, carouselList[i].color)
       await typeSentence(carouselList[i].text, eleRef);
-      await waitForMs(1500);
+      await waitForMs(2000);
       await deleteSentence(eleRef);
       await waitForMs(500);
       i++
