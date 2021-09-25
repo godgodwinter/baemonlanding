@@ -160,7 +160,7 @@ https://templatemo.com/tm-538-digital-trend
   
   .custom-btn:hover,
   .custom-btn:focus {
-    background: var(--dark-color);
+    background: var(--primary-color);
     color: var(--white-color);
     border-color: transparent;
   }
