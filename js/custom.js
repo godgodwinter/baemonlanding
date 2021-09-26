@@ -29,19 +29,21 @@
 
     // PROJECT SLIDE
     $('#project-slide').owlCarousel({
-      stagePadding: 100,
+      smartSpeed: 250,
+      dots: false,
+      stagePadding: 0,
       loop: true,
       center: true,
       autoplayHoverPause: false,
-      autoplay: false,
-      margin: 30,
+      autoplay: true,
+      margin: 0,
       responsiveClass:true,
       responsive:{
           0:{
               items:1,
           },
           768:{
-              items:2,
+              items:4,
           }
       }
     });
