@@ -45,6 +45,17 @@
       }
     });
 
+    //SCROLL BAR
+    $("#top").niceScroll({
+      scrollspeed: 0,
+      cursorcolor: "#f1c111",
+      cursorwidth: "7px",
+      background: "rgba(20,20,20,0)",
+      cursorborder: "1px solid #f1c111",
+      cursorborderradius: "5px",
+      zindex: "999"
+ });
+
   });
 
 

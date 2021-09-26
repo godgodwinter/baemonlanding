@@ -22,7 +22,7 @@
      <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
-<body id="top" onscroll="myFunction();">
+<body id="top" onscroll="scrollAnimate();">
 
      <!-- SCROLL TOP -->
      <a href="" id="scroll" onclick="scrollToTop(); return false">
@@ -249,52 +249,7 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
      <script src="js/scrollToTop.js"></script>
-     <!-- <script>
-          function myFunction() {
-               var y = window.pageYOffset;
-               console.log((y-500)/3.33);
-               if (y >= 500) {
-                    document.getElementById("scrollTop").style.transform = "translateY(0px)";
-                    document.getElementById("scrollTop").style.opacity = "1";
-               } else if (y >= 400 && y < 500) {
-                    document.getElementById("scrollTop").style.transform = "translateY(-"+(y-500)/3.33+"px)";
-                    document.getElementById("scrollTop").style.opacity = "0.8";
-               } else if (y >= 300 && y < 400) {
-                    document.getElementById("scrollTop").style.transform = "translateY(-"+(y-500)/3.33+"px)";
-                    document.getElementById("scrollTop").style.opacity = "0.6";
-               } else if (y >= 200 && y < 300) {
-                    document.getElementById("scrollTop").style.transform = "translateY(-"+(y-500)/3.33+"px)";
-                    document.getElementById("scrollTop").style.opacity = "0.4";
-               } else if (y >= 100 && y < 200) {
-                    document.getElementById("scrollTop").style.transform = "translateY(-"+(y-500)/3.33+"px)";
-                    document.getElementById("scrollTop").style.opacity = "0.2";
-               } else{
-                    document.getElementById("scrollTop").style.transform = "translateY(-150px)";
-                    document.getElementById("scrollTop").style.opacity = "0";
-               }
-          }    
-     </script> -->
-
-     <script>
-          function myFunction() {
-               var y = window.pageYOffset;
-               // console.log(y);
-               if (y > 500) {
-                    document.getElementById("scrollTop").style.transform = "translateY(0px)";
-                    document.getElementById("scrollTop").style.opacity = "1";
-               } else if (y <= 500 && y > 0) {
-
-                    document.getElementById("scrollTop").style.transform = "translateY(" + ((y - 500) / 3.33) + "px)";
-                    document.getElementById("scrollTop").style.opacity = (((0.002 / 1) * y));
-
-                    console.log(((y - 500) / 3.33));
-               } else {
-                    document.getElementById("scrollTop").style.transform = "translateY(-150px)";
-                    document.getElementById("scrollTop").style.opacity = "0";
-               }
-          }
-     </script>
-
+     <script src="js/jquery.nicescroll.min.js"></script>
 </body>
 
 </html>
