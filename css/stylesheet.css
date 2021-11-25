@@ -2,7 +2,7 @@
 
 DIGITAL TREND
 
-https://templatemo.com/tm-538-digital-trend
+https://templatemolist-detailcom/tm-538-digital-trend
 
 */
   
@@ -285,6 +285,10 @@ https://templatemo.com/tm-538-digital-trend
     padding: 0.6em;
   }
 
+  .current-page{
+    color: var(--secondary-color);
+  }
+
   .nav-link.active,
   .nav-link:hover {
     color: var(--secondary-color);
@@ -556,51 +560,17 @@ text-muted:hover{
   /*---------------------------------------
       BLOG            
   -----------------------------------------*/
-
-  .blog-header {
-    border-radius: var(--border-radius-small);
-    position: relative;
-    overflow: hidden;
+  .blog{
+    /* background-color: red; */
+    height: auto;
+    width: 100%;
   }
 
-  .blog-header img {
-    border-radius: var(--border-radius-small);
-    display: block;
+  .blog-list{
+    background-color: red;
+    width: 100%;
+    height: 100px;
   }
-
-  .blog-header-info {
-    background: linear-gradient(transparent,rgba(0,0,0,0.95));
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 2em;
-  }
-
-  .blog-header-info h3 {
-    max-width: 80%;
-  }
-
-  .blog-header-info a {
-    color: var(--white-color);
-  }
-
-  .blog-header-info a:hover {
-    color: var(--secondary-color);
-  }
-
-  .blog-sidebar img {
-    border-radius: var(--border-radius-small);
-    width: 159px;
-    margin-right: 22px;
-  }
-
-  .blog-sidebar h3 {
-    font-size: 18px;
-  }
-
-
-
   /*---------------------------------------
      CONTACT              
   -----------------------------------------*/
@@ -628,8 +598,6 @@ text-muted:hover{
   .newsletter-form button {
     background: var(--secondary-color);
   }
-
-
 
   /*---------------------------------------
      FOOTER              
